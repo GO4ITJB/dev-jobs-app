@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevJobs Web App</title>
+    <link rel="stylesheet" href="/dist/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-LightGrey">
+    <header class="header">
+      <div class="header__container p-6 flex justify-between items-center ">
+      <a href="#" class="header__logo">
+        <img src="assets/desktop/logo.svg" alt="" class="header__logo-img" />
+      </a>
+      <div class="relative inline-block w-11 h-5">
+        <input
+          checked
+          id="switch-component"
+          type="checkbox"
+          class="peer appearance-none w-11 h-5 bg-slate-100 rounded-full checked:bg-slate-800 cursor-pointer transition-colors duration-300"
+        />
+        <label
+          for="switch-component"
+          class="absolute top-0 left-0 w-5 h-5 bg-white rounded-full border border-slate-300 shadow-sm transition-transform duration-300 peer-checked:translate-x-6 peer-checked:border-slate-800 cursor-pointer"
+        >
+        </label>
+      </div>
+    </header>
+    <main>
+      <section class="filter">
+        <div class="filter__container w-[90%] mx-auto -mt-14">
+          <form action="#" method="GET" class="flex items-center space-x-2 bg-white p-4 rounded-lg shadow-md">
+            <!-- Search Input -->
+            <div class="flex-grow">
+              <label for="search" class="sr-only" å>Search</label>
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Filter by title..."
+                class="w-full border border-gray-300 rounded-md p-2 text-gray-700 focus:ring-blue-500 focus:border-blue-500 border-none"
+              />
+            </div>
+      
+            <button type="submit">
+            <img src="assets/mobile/icon-filter.svg" alt="" class="mr-1">
+          </button>
+      
+            <button
+              type="submit"
+              class="bg-blue-500 p-2 rounded-md hover:bg-blue-600 transition
+              "
+            >
+              <img src="assets/desktop/icon-search.svg" alt="">
+            </button>
+
+          </form>
+        </div>
+      </section>
+      <section class="jobs">
+        <div class="jobs__container w-[90%] mx-auto
+        my-14">
+          <div class="jobs__items flex flex-col gap-12">
+            <!-- <a href="#">
+              <div class="jobs__item rounded-md bg-white">
+                <div class="absolute">
+                  <img src="assets/logos/scoot.svg" alt="" class="item__img py-5 px-1.5 bg-scootOrange
+                  rounded-2xl relative top-[-25px] left-[25px]">
+                </div>
+  
+                <div class="item__content min-h-[228px] px-[25px] pt-12 pb-10 flex justify-center flex-col">
+                  <h4 class="item__heading-top text-darkGrey font-light">
+                    5h ago <span class="px-2">•</span> Full time
+                  </h4>
+                  <h2 class="item__heading-main font-bold
+                  py-2 text-lg">Senior Software Engineer</h2>
+                  <h4 class="item__heading-sub text-darkGrey font-light">Scoot</h4>
+                  <p class="item__contry text-violet mt-auto font-semibold text-sm">United Kingdom</p>
+                </div>
+  
+              </div>
+            </a>
+            
+            <div class="btn-container flex justify-center items-center">
+              <button class="load-more bg-violet py-2 px-4
+              rounded-lg text-white">Load more</button>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
